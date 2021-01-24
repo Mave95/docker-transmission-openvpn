@@ -1,7 +1,7 @@
 # OpenVPN and Transmission with WebUI
 
 [![CircleCI builds](https://img.shields.io/circleci/build/github/haugene/docker-transmission-openvpn)](https://circleci.com/gh/haugene/docker-transmission-openvpn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/haugene/transmission-openvpn.svg)](https://hub.docker.com/r/haugene/transmission-openvpn/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mave95/transmission-openvpn.svg)](https://hub.docker.com/r/mave95/transmission-openvpn/)
 [![Join the chat at https://gitter.im/docker-transmission-openvpn/Lobby](https://badges.gitter.im/docker-transmission-openvpn/Lobby.svg)](https://gitter.im/docker-transmission-openvpn/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This container contains OpenVPN and Transmission with a configuration
@@ -10,9 +10,11 @@ It has built in support for many popular VPN providers to make the setup easier.
 
 ## Before you continue
 
+This is a fork of https://github.com/haugene/docker-transmission-openvpn which reverts the [commit](https://github.com/haugene/docker-transmission-openvpn/commit/2f1ee837fd8a0c2b8715080bfa776380e604a6be) that removed support for the VPN provider Perfect Privacy.
+
 The documentation for this image is here:
 
-https://haugene.github.io/docker-transmission-openvpn/
+https://mave95.github.io/docker-transmission-openvpn/
 
 Start there if you're having issues or questions about your container.
 If you can't find your answer in the docs, please
@@ -42,7 +44,7 @@ $ docker run --cap-add=NET_ADMIN -d \
               --log-driver json-file \
               --log-opt max-size=10m \
               -p 9091:9091 \
-              haugene/transmission-openvpn
+              mave95/transmission-openvpn
 ```
 
 ### Docker Compose
@@ -66,7 +68,7 @@ services:
                 max-size: 10m
         ports:
             - '9091:9091'
-        image: haugene/transmission-openvpn
+        image: mave95/transmission-openvpn
 ```
 
 ## Please help out (about:maintenance)
