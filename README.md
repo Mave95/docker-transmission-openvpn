@@ -1,6 +1,6 @@
 # OpenVPN and Transmission with WebUI
 
-[![CircleCI builds](https://img.shields.io/circleci/build/github/haugene/docker-transmission-openvpn)](https://circleci.com/gh/haugene/docker-transmission-openvpn)
+[![Dockerhub builds](https://img.shields.io/docker/cloud/build/mave95/transmission-openvpn.svg)](https://hub.docker.com/r/mave95/transmission-openvpn/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mave95/transmission-openvpn.svg)](https://hub.docker.com/r/mave95/transmission-openvpn/)
 [![Join the chat at https://gitter.im/docker-transmission-openvpn/Lobby](https://badges.gitter.im/docker-transmission-openvpn/Lobby.svg)](https://gitter.im/docker-transmission-openvpn/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
